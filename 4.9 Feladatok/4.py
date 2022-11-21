@@ -4,12 +4,16 @@ Sanyi = turtle.Turtle()
 Sanyi.pensize(4)
 Sanyi.color("blue")
 ablak.bgcolor("lightgreen")
-def spiral(t,h):
-    for i in range(5):
-        t.forward(200)
-        t.right(h)
-meret = 0
-for i in range(10):
-    spiral(Sanyi,meret)
-    meret = meret+36
+for i in range(5):    
+    for i in range(4):
+        Sanyi.forward(100)
+        Sanyi.left(90)
+        Sanyi.forward(100)
+        Sanyi.backward(200)
+        Sanyi.forward(100)
+        Sanyi.right(90)
+        Sanyi.backward(100)
+        Sanyi.left(90)
+    Sanyi.left(36)
+ablak.mainloop()
 
