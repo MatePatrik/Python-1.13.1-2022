@@ -4,7 +4,6 @@ def rajzolj_oszlopot(t, magassag):
     t.begin_fill()
     t.left(90)
     t.forward(magassag)
-    t.right(90)
     if magassag>0:
         t.write("  "+str(magassag))
     if magassag<0:
@@ -13,6 +12,7 @@ def rajzolj_oszlopot(t, magassag):
         t.write(" "+str(magassag))
         t.forward(15)
         t.pendown()
+    t.right(90)
     t.forward(40)
     t.right(90)
     t.forward(magassag)
