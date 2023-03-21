@@ -1,0 +1,131 @@
+<!DOCTYPE html">
+<html lang="hu">
+
+<head>
+    <title>Bíró László</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+                * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Fejléc */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(82, 77, 77);
+            margin-bottom: 0;
+        }
+
+        /* Menü lista */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Blokkok */
+        article {
+            padding: 20px;
+            background-color: #f1f1f1;
+            height: 500px;
+        }
+
+        .bal{
+            float: left;
+            width: 30%;
+        }
+
+        .jobb{
+            float: right;
+            width: 70%;
+        }
+
+        /* Úsztatások törlése */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Lábléc */
+        footer {
+            background-color: #777;
+            padding: 15px;
+            height: 60px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - kis képernyőnél az oszlopok egymás alá kerülnek */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="jumbotron text-center">
+            <h2>Bíró László József</h2>
+            </header>
+
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="biro.html">Életrajz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="szerkezet.html">A golyóstoll szerkezete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="golyo.html">A golyó nagyítva</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <article class="bal">
+                    <img class="tollszerkezet" src="tollszerkezet.jpg" />
+                </article>
+
+                <article class="jobb">
+                    <p> Legismertebb találmányához, a golyóstollhoz is újságírói hivatása vezette el. Azonban mint minden találmánynak, így a golyóstollnak is voltak korábbi elődei.
+                        <ul> 
+                            <li>Az első író-toll a tintába mártott madártoll volt. Szükséges volt a folyamatos írás érdekében meghosszabbítani a két tintába mártás közötti írásra használt időt, valamint megszüntetni a tinta szétfröcskölődéséből adódó szennyeződést, és tökéletesíteni az íróeszköz kezelhetőséget.
+                            </li>    
+                            <li>1884-ben L. E. Waterman, egy New York-i biztosítási üzletember készítette el az első töltőtoll terveit, mely az elkövetkező 60 év meghatározó íróeszközévé vált.
+                            </li>
+                            <li>1912-ben Németországban, Wilhelm Braun is tett kísérleteket arra, hogy továbbfejlessze a töltőtollat. Sajnos a tollak csak elvben működtek, a gyakorlatban nem.
+                            </li> 
+                            <li>1924-ben G. L. Lorenz, Drezdában egy új tollat fejlesztett ki, melyet Mungo néven gyártottak, s mintadarabjait a Lipcsei vásáron árusították. Ezek a tollaknak azonban csak 1-2 napig voltak használhatóak.
+                            </li>
+                            <li>1938-ban Wenczel Climes cseh feltaláló szabadalmaztatott egy új típusú tollat, mely szintén csak a tervezőasztalon működött, gyakorlatilag azonban használhatatlan volt.
+                            </li> 
+                        </ul>
+                        Bíró László József áttanulmányozta a cseh Wenczel Climes szabadalmaztatott ötletét, majd továbbfejlesztette azt.
+                    </p>
+
+                </article>
+            </section>
+            <footer class="jumbotron">
+                <p class="bal">2022. január 11.</p>
+                <p class="jobb">Készítette: Minta Jakab</p>
+            </footer>
+    </div>
+</body>
+
+</html>
